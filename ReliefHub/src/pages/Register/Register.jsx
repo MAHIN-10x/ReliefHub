@@ -1,3 +1,5 @@
+import "./Register.css";
+
 function Register({ onRegister, onLoginClick }) {
   return (
     <div className="auth-layout">
