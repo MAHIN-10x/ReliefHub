@@ -14,8 +14,6 @@ function Home() {
           <a href="#donate">Donate</a>
         </nav>
         <div className="nav-actions">
-          <Link to="/login" className="btn btn-outline">Login</Link>
-          <Link to="/register" className="btn btn-solid">Register</Link>
         </div>
       </header>
 
