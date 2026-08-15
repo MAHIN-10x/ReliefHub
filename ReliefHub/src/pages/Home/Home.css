@@ -1,0 +1,272 @@
+.home {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+/* Navbar */
+.navbar {
+  height: 72px;
+  background: #fff;
+  border-bottom: 1px solid #e8ebf2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #0b6b57;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 26px;
+}
+
+.navbar nav a {
+  color: #526070;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar nav a:hover {
+  color: #0b6b57;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 12px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn-outline {
+  border: 1px solid #dfe4eb;
+  color: #263247;
+  background: transparent;
+}
+
+.btn-solid {
+  background: #0b6b57;
+  color: #fff;
+}
+
+.btn-danger {
+  background: #e94b4b;
+  color: #fff;
+}
+
+.btn-light {
+  background: #fff;
+  color: #0b6b57;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #0b6b57, #149474);
+  color: #fff;
+  padding: 70px 6%;
+  text-align: left;
+}
+
+.hero .badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero h1 {
+  font-size: 46px;
+  line-height: 1.15;
+  max-width: 700px;
+  margin-bottom: 16px;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #e6fff8;
+  max-width: 620px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+/* Stats */
+.stats {
+  padding: 32px 6%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.stat {
+  background: #fff;
+  border: 1px solid #e9edf3;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.stat strong {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.stat small {
+  color: #718096;
+}
+
+/* Services */
+.services {
+  padding: 20px 6% 50px;
+}
+
+.services h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e7ebf1;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.card .icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #e9f7f3;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.card p {
+  color: #697586;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Emergency banner */
+.emergency-banner {
+  margin: 0 6% 40px;
+  background: #fff4f4;
+  border: 1px solid #ffd7d7;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.emergency-banner h3 {
+  color: #b32626;
+  margin-bottom: 4px;
+}
+
+.emergency-banner p {
+  color: #7b6060;
+  font-size: 14px;
+}
+
+/* Donate */
+.donate {
+  padding: 0 6% 50px;
+}
+
+.donate h2 {
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+
+.campaign-card {
+  background: #fff;
+  border: 1px solid #e7ebf1;
+  border-radius: 14px;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.progress-track {
+  height: 10px;
+  background: #e8edf2;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #0b6b57;
+}
+
+/* Footer */
+.footer {
+  background: #172033;
+  color: #bfc7d4;
+  padding: 24px 6%;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .navbar nav {
+    display: none;
+  }
+  .hero h1 {
+    font-size: 34px;
+  }
+  .stats,
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
