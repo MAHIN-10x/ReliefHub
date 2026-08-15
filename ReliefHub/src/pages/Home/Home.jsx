@@ -1,12 +1,5 @@
-import React from "react";
-
 function Home() {
-  return (
-    <div>
-      <h1>Welcome to ReliefHub</h1>
-      <p>Help when it matters most.</p>
-    </div>
-  );
+  return <h1>Home Page</h1>;
 }
 
 export default Home;
