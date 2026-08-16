@@ -1,0 +1,255 @@
+.about-page {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+  min-height: 100vh;
+}
+
+.about-navbar {
+  height: 72px;
+  background: #ffffff;
+  border-bottom: 1px solid #e8ebf2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.about-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 22px;
+  font-weight: 800;
+  color: #0b6b57;
+}
+
+.about-nav {
+  display: flex;
+  gap: 26px;
+}
+
+.about-nav a {
+  color: #526070;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.about-nav a:hover {
+  color: #0b6b57;
+}
+
+.about-hero {
+  display: grid;
+  grid-template-columns: 1.5fr 0.8fr;
+  gap: 28px;
+  align-items: center;
+  background: linear-gradient(135deg, #0b6b57, #149474);
+  color: #ffffff;
+  padding: 72px 6%;
+}
+
+.about-badge,
+.eyebrow {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 7px 12px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-hero-text h1 {
+  font-size: 48px;
+  line-height: 1.12;
+  margin: 18px 0 16px;
+  color: #ffffff;
+  max-width: 650px;
+}
+
+.about-hero-text p {
+  max-width: 620px;
+  color: #e6fff8;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.about-hero-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding: 28px;
+  backdrop-filter: blur(8px);
+}
+
+.about-hero-card h3 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.about-hero-card p {
+  color: #ebfff9;
+  line-height: 1.7;
+}
+
+.about-section {
+  padding: 72px 6% 0;
+}
+
+.section-heading {
+  margin-bottom: 28px;
+}
+
+.section-heading h2,
+.impact-copy h2,
+.about-cta h2 {
+  font-size: 34px;
+  line-height: 1.2;
+  margin-top: 12px;
+  color: #172033;
+}
+
+.eyebrow {
+  background: #eafaf5;
+  border-color: #cfeee3;
+  color: #0b6b57;
+}
+
+.mission-grid,
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.mission-card,
+.step-card {
+  background: #ffffff;
+  border: 1px solid #e7ebf1;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(15, 34, 58, 0.04);
+}
+
+.mission-card .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e9f7f3;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.mission-card h3,
+.step-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #172033;
+}
+
+.mission-card p,
+.step-card p,
+.impact-copy p {
+  color: #5f6f84;
+  line-height: 1.7;
+}
+
+.about-impact {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 28px;
+  padding: 72px 6% 0;
+  align-items: center;
+}
+
+.impact-stats {
+  display: grid;
+  gap: 16px;
+}
+
+.impact-item {
+  background: #ffffff;
+  border: 1px solid #e7ebf1;
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.impact-item strong {
+  font-size: 28px;
+  color: #0b6b57;
+}
+
+.impact-item span {
+  color: #5f6f84;
+}
+
+.steps-section {
+  padding-bottom: 16px;
+}
+
+.step-number {
+  display: inline-block;
+  color: #0b6b57;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin-bottom: 18px;
+}
+
+.about-cta {
+  margin: 72px 6% 48px;
+  background: #fff4f4;
+  border: 1px solid #ffd7d7;
+  border-radius: 18px;
+  padding: 28px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.about-button {
+  background: #0b6b57;
+  color: #ffffff;
+  border: none;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .about-hero,
+  .about-impact,
+  .mission-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-nav {
+    display: none;
+  }
+
+  .about-hero-text h1 {
+    font-size: 36px;
+  }
+
+  .about-cta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
