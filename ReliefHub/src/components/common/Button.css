@@ -1,0 +1,123 @@
+.relief-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Sizes */
+.relief-btn--sm {
+  padding: 8px 14px;
+  font-size: 0.875rem;
+  border-radius: var(--radius-sm);
+}
+
+.relief-btn--md {
+  padding: 11px 20px;
+  font-size: 0.95rem;
+  min-height: 44px;
+}
+
+.relief-btn--lg {
+  padding: 14px 26px;
+  font-size: 1.05rem;
+  min-height: 50px;
+}
+
+.relief-btn--full {
+  width: 100%;
+}
+
+/* Primary Variant (Deep Teal) */
+.relief-btn--primary {
+  background-color: var(--primary);
+  color: var(--text-white);
+  box-shadow: 0 2px 6px rgba(10, 92, 72, 0.2);
+}
+
+.relief-btn--primary:hover:not(:disabled) {
+  background-color: var(--primary-dark);
+  box-shadow: 0 4px 12px rgba(10, 92, 72, 0.3);
+  transform: translateY(-1px);
+}
+
+.relief-btn--primary:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Danger / Emergency Variant (Coral/Red) */
+.relief-btn--danger {
+  background-color: var(--danger);
+  color: var(--text-white);
+  box-shadow: 0 2px 8px rgba(224, 82, 82, 0.25);
+}
+
+.relief-btn--danger:hover:not(:disabled) {
+  background-color: var(--danger-dark);
+  box-shadow: 0 4px 14px rgba(224, 82, 82, 0.35);
+  transform: translateY(-1px);
+}
+
+.relief-btn--danger:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* White Variant (for dark teal hero background) */
+.relief-btn--white {
+  background-color: #ffffff;
+  color: var(--primary-dark);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.relief-btn--white:hover:not(:disabled) {
+  background-color: #f8fafc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Secondary Variant */
+.relief-btn--secondary {
+  background-color: var(--primary-subtle);
+  color: var(--primary-dark);
+}
+
+.relief-btn--secondary:hover:not(:disabled) {
+  background-color: #d7ede7;
+}
+
+/* Outline Variant */
+.relief-btn--outline {
+  background-color: transparent;
+  border-color: var(--border-light);
+  color: var(--text-main);
+}
+
+.relief-btn--outline:hover:not(:disabled) {
+  border-color: var(--primary);
+  color: var(--primary);
+  background-color: var(--primary-subtle);
+}
+
+/* Disabled */
+.relief-btn--disabled,
+.relief-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.relief-btn-icon {
+  display: flex;
+  align-items: center;
+}
