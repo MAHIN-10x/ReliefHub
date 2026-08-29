@@ -1,0 +1,222 @@
+.relief-auth-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(100vh - 70px);
+  background-color: var(--bg-page);
+}
+
+.relief-auth-form-pane {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background-color: #f1f5f9;
+}
+
+.relief-auth-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 12px 32px -4px rgba(15, 23, 42, 0.08);
+  padding: 36px 40px;
+  width: 100%;
+  max-width: 440px;
+}
+
+/* Segmented Pill Toggle */
+.relief-segmented-toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--bg-pill-track);
+  border-radius: var(--radius-md);
+  padding: 4px;
+  margin-bottom: 28px;
+}
+
+.relief-toggle-btn {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.relief-toggle-btn:hover {
+  color: var(--text-title);
+}
+
+.relief-toggle-btn--active {
+  background-color: #ffffff;
+  color: var(--text-title);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+/* Card Titles */
+.relief-auth-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-title);
+  text-align: center;
+  letter-spacing: -0.02em;
+  margin-bottom: 8px;
+}
+
+.relief-auth-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+/* Alerts */
+.relief-form-alert {
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.relief-form-alert--success {
+  background-color: #dcfce7;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.relief-form-alert--error {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+/* Form Styles */
+.relief-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.relief-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.relief-field-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.relief-input,
+.relief-select,
+.relief-textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius-md);
+  background-color: #ffffff;
+  color: var(--text-title);
+  font-size: 0.95rem;
+  transition: all 0.15s ease;
+}
+
+.relief-input::placeholder,
+.relief-textarea::placeholder {
+  color: #9ca3af;
+}
+
+.relief-input:focus,
+.relief-select:focus,
+.relief-textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(10, 92, 72, 0.12);
+}
+
+.relief-input--error,
+.relief-select--error {
+  border-color: var(--danger) !important;
+}
+
+.relief-field-error {
+  font-size: 0.78rem;
+  color: var(--danger);
+  font-weight: 500;
+}
+
+/* Checkbox & Forgot row */
+.relief-auth-options-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-top: -2px;
+}
+
+.relief-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-body);
+  cursor: pointer;
+  user-select: none;
+}
+
+.relief-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.relief-forgot-link {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.relief-forgot-link:hover {
+  text-decoration: underline;
+}
+
+.relief-auth-submit-btn {
+  margin-top: 8px;
+}
+
+/* Bottom switch */
+.relief-auth-bottom-switch {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.relief-auth-link-bold {
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.relief-auth-link-bold:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .relief-auth-page {
+    grid-template-columns: 1fr;
+  }
+  .relief-auth-card {
+    max-width: 480px;
+    padding: 28px 24px;
+  }
+}
