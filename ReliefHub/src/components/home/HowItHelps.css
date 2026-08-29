@@ -1,0 +1,78 @@
+.relief-how-section {
+  padding: 48px 0;
+}
+
+.relief-how-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-title);
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: -0.02em;
+}
+
+.relief-how-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.relief-how-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 16px -2px rgba(0, 0, 0, 0.04);
+  background: var(--bg-surface);
+  transition: all 0.2s ease;
+  height: 100%;
+}
+
+.relief-how-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 24px -4px rgba(10, 92, 72, 0.12);
+}
+
+.relief-how-icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.relief-how-emoji {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.relief-how-card-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin-bottom: 8px;
+}
+
+.relief-how-card-desc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-body);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .relief-how-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+}
+
+@media (max-width: 580px) {
+  .relief-how-grid {
+    grid-template-columns: 1fr;
+  }
+}
