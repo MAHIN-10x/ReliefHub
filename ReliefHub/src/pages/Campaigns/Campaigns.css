@@ -1,0 +1,123 @@
+.relief-campaigns-page {
+  padding: 48px 0 80px;
+  background-color: var(--bg-page);
+}
+
+.relief-campaigns-badge {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  margin-bottom: 14px;
+}
+
+.relief-campaign-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.relief-campaigns-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.relief-full-campaign-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.relief-campaign-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.relief-campaign-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  background-color: var(--primary-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relief-campaign-category-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.relief-campaign-cat-pill {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-body);
+  background: var(--bg-muted);
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+}
+
+.relief-campaign-card-title {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: var(--text-title);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.relief-campaign-location-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.relief-campaign-loc-icon {
+  color: var(--primary);
+}
+
+.relief-campaign-card-desc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-body);
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.relief-campaign-progress-section {
+  background: var(--bg-muted);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  margin-bottom: 20px;
+}
+
+.relief-campaign-progress-numbers {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.relief-campaign-target-sub {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.relief-campaign-card-action {
+  margin-top: auto;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .relief-campaigns-grid {
+    grid-template-columns: 1fr;
+  }
+}
