@@ -1,0 +1,39 @@
+.relief-card {
+  background-color: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+}
+
+/* Padding variants */
+.relief-card--pad-none { padding: 0; }
+.relief-card--pad-sm { padding: 14px 18px; }
+.relief-card--pad-normal { padding: 22px 24px; }
+.relief-card--pad-lg { padding: 32px; }
+
+/* Elevated */
+.relief-card--elevated {
+  box-shadow: var(--shadow-card);
+  border-color: rgba(229, 231, 235, 0.8);
+}
+
+/* Clickable / Interactive */
+.relief-card--clickable,
+.relief-card--interactive {
+  cursor: pointer;
+}
+
+.relief-card--clickable:hover,
+.relief-card--interactive:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: #cbd5e1;
+}
+
+/* Emergency variant (subtle red alert card) */
+.relief-card--emergency {
+  background-color: var(--danger-subtle);
+  border-color: var(--danger-border);
+}
