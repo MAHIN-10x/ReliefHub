@@ -1,0 +1,113 @@
+.relief-services-page {
+  padding: 48px 0 80px;
+  background-color: var(--bg-page);
+}
+
+.relief-services-badge {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  margin-bottom: 14px;
+}
+
+.relief-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.relief-service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+.relief-service-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.relief-service-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.relief-service-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text-title);
+  margin-bottom: 4px;
+}
+
+.relief-service-tagline {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.relief-service-desc {
+  font-size: 0.93rem;
+  line-height: 1.6;
+  color: var(--text-body);
+  margin-bottom: 20px;
+}
+
+.relief-service-features {
+  margin-top: auto;
+  background-color: var(--bg-muted);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 16px 18px;
+  margin-bottom: 24px;
+}
+
+.relief-service-features-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-title);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.relief-service-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.relief-service-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-main);
+  line-height: 1.4;
+}
+
+.relief-service-check {
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.relief-service-action-wrap {
+  display: flex;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .relief-services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
