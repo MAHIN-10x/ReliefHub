@@ -1,0 +1,292 @@
+.relief-volunteers-page {
+  padding: 48px 0 80px;
+  background-color: var(--bg-page);
+}
+
+.relief-volunteers-badge {
+  background-color: var(--primary) !important;
+  color: #ffffff !important;
+  margin-bottom: 14px;
+}
+
+.relief-volunteer-status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.relief-volunteer-db-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  color: var(--text-body);
+  box-shadow: var(--shadow-sm);
+}
+
+.relief-volunteer-refresh-btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px !important;
+  font-size: 0.85rem !important;
+}
+
+.relief-volunteer-controls {
+  max-width: 760px;
+  margin: 0 auto 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.relief-volunteer-search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 4px 12px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.relief-volunteer-search-box:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.relief-volunteer-search-input {
+  flex-grow: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 4px;
+  font-size: 0.95rem;
+  color: var(--text-title);
+  outline: none;
+}
+
+.relief-missions-empty {
+  text-align: center;
+  padding: 48px 24px;
+  background: var(--bg-surface);
+  border: 1px dashed var(--border-light);
+  border-radius: var(--radius-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.relief-missions-empty h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin: 0;
+}
+
+.relief-missions-empty p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 8px;
+}
+
+/* Filter Bar */
+.relief-missions-filter-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.relief-filter-label {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-title);
+}
+
+.relief-filter-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.relief-filter-btn {
+  padding: 8px 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-pill);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-body);
+  transition: all 0.15s ease;
+}
+
+.relief-filter-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.relief-filter-btn--active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff !important;
+}
+
+/* Missions Grid */
+.relief-missions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.relief-mission-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.relief-mission-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.relief-mission-type-tag {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--bg-muted);
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+}
+
+.relief-mission-title {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: var(--text-title);
+  margin-bottom: 14px;
+  line-height: 1.35;
+}
+
+.relief-mission-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.relief-mission-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: var(--text-body);
+}
+
+.relief-meta-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.relief-mission-progress-track {
+  height: 6px;
+  background-color: #e5e7eb;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.relief-mission-progress-bar {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: var(--radius-pill);
+}
+
+.relief-mission-desc {
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-body);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.relief-mission-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.relief-mission-actions button {
+  flex: 1;
+}
+
+/* Modal Content */
+.relief-modal-mission-details {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.relief-modal-mission-name {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-title);
+  margin: 0;
+}
+
+.relief-modal-badges {
+  display: flex;
+  gap: 8px;
+}
+
+.relief-modal-section {
+  background: var(--bg-muted);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+
+.relief-modal-subheading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-title);
+  margin-bottom: 8px;
+}
+
+.relief-modal-section p {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.relief-modal-section p:last-child {
+  margin-bottom: 0;
+}
+
+.relief-join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .relief-missions-grid {
+    grid-template-columns: 1fr;
+  }
+}
