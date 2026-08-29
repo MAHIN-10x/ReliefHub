@@ -1,0 +1,301 @@
+.relief-emergency-page {
+  padding: 48px 0 80px;
+  background-color: var(--bg-page);
+  min-height: 80vh;
+}
+
+.relief-page-header {
+  max-width: 720px;
+  margin: 0 auto 40px;
+}
+
+.relief-emergency-badge {
+  margin-bottom: 14px;
+}
+
+.relief-page-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: var(--text-title);
+  letter-spacing: -0.025em;
+  margin-bottom: 12px;
+}
+
+.relief-page-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.relief-emergency-form-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  align-items: flex-start;
+}
+
+.relief-emergency-card {
+  box-shadow: var(--shadow-card);
+}
+
+.relief-emergency-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.relief-form-row {
+  display: grid;
+  gap: 16px;
+}
+
+.relief-form-row--2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.relief-form-row--3 {
+  grid-template-columns: 1.2fr 1fr 1fr;
+}
+
+/* Assistance Multi-select Chips */
+.relief-assistance-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.relief-chip {
+  padding: 8px 14px;
+  background: var(--bg-muted);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-body);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.relief-chip:hover {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.relief-chip--selected {
+  background-color: var(--danger-subtle);
+  border-color: var(--danger);
+  color: var(--danger-dark);
+}
+
+.relief-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.relief-submit-emergency-btn {
+  font-size: 1.05rem;
+  padding: 14px;
+  font-weight: 700;
+}
+
+/* Sidebar */
+.relief-emergency-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.relief-info-card {
+  border-left: 4px solid var(--danger);
+}
+
+.relief-info-card--teal {
+  border-left: 4px solid var(--primary);
+  background-color: #f0fdf4;
+}
+
+.relief-info-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.relief-info-icon {
+  color: var(--danger);
+}
+
+.relief-info-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin: 0;
+}
+
+.relief-info-list {
+  padding-left: 18px;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: var(--text-body);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.relief-info-card-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 6px;
+}
+
+.relief-info-card-subtext {
+  font-size: 0.88rem;
+  color: var(--text-body);
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+/* Success View */
+.relief-emergency-success-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.relief-emergency-success-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.relief-success-icon-wrap {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #dcfce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.relief-success-icon {
+  color: #16a34a;
+}
+
+.relief-success-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--text-title);
+  margin-bottom: 10px;
+}
+
+.relief-success-subtext {
+  font-size: 0.95rem;
+  color: var(--text-body);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.relief-mission-created-notice {
+  width: 100%;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border: 1.5px solid #86efac;
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  text-align: left;
+  box-shadow: var(--shadow-sm);
+}
+
+.relief-mission-notice-badge {
+  display: inline-block;
+  background-color: #16a34a;
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.relief-mission-created-notice h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #14532d;
+  margin: 0 0 6px;
+}
+
+.relief-mission-created-notice p {
+  font-size: 0.88rem;
+  color: #166534;
+  margin: 0 0 12px;
+}
+
+.relief-view-mission-btn {
+  background-color: #15803d !important;
+  color: #ffffff !important;
+}
+
+.relief-summary-box {
+  width: 100%;
+  background-color: var(--bg-muted);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+  text-align: left;
+}
+
+.relief-summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.relief-summary-row span {
+  color: var(--text-muted);
+}
+
+.relief-summary-row strong {
+  color: var(--text-title);
+}
+
+.relief-urgency-tag--critical {
+  color: var(--danger);
+  font-weight: 700;
+}
+
+.relief-success-actions {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.relief-success-actions button {
+  flex: 1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .relief-emergency-form-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .relief-form-row--2,
+  .relief-form-row--3 {
+    grid-template-columns: 1fr;
+  }
+  .relief-success-actions {
+    flex-direction: column;
+  }
+}
