@@ -1,0 +1,131 @@
+.relief-auth-brand-pane {
+  background: linear-gradient(155deg, #074a3b 0%, #0a5c48 50%, #064032 100%);
+  color: #ffffff;
+  padding: 60px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+/* Concentric rings */
+.relief-auth-brand-decorations {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.relief-auth-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.relief-auth-circle--1 {
+  width: 500px;
+  height: 500px;
+  top: -80px;
+  right: -140px;
+}
+
+.relief-auth-circle--2 {
+  width: 750px;
+  height: 750px;
+  top: -180px;
+  right: -240px;
+}
+
+.relief-auth-circle--3 {
+  width: 600px;
+  height: 600px;
+  bottom: -220px;
+  left: -200px;
+}
+
+.relief-auth-brand-content {
+  position: relative;
+  z-index: 2;
+  max-width: 480px;
+}
+
+/* Brand Logo */
+.relief-auth-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 36px;
+}
+
+.relief-auth-logo-text {
+  color: #ffffff;
+}
+
+.relief-auth-badge-wrap {
+  margin-bottom: 28px;
+}
+
+/* Headline */
+.relief-auth-headline {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #ffffff;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+}
+
+.relief-auth-subtext {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.88);
+  margin-bottom: 32px;
+}
+
+/* Feature List */
+.relief-auth-features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.relief-auth-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.relief-auth-bullet {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .relief-auth-brand-pane {
+    padding: 48px 36px;
+  }
+
+  .relief-auth-headline {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .relief-auth-brand-pane {
+    display: none;
+  }
+}
