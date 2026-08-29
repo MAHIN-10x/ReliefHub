@@ -1,0 +1,117 @@
+.relief-campaign-section {
+  padding: 32px 0 64px;
+}
+
+.relief-campaign-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.relief-campaign-section-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-title);
+  text-align: center;
+  margin-bottom: 32px;
+  letter-spacing: -0.02em;
+}
+
+.relief-campaign-grid-single {
+  width: 100%;
+  max-width: 480px;
+}
+
+.relief-campaign-card {
+  background: var(--bg-surface);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--border-light);
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06);
+  padding: 28px !important;
+}
+
+.relief-campaign-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.relief-campaign-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background-color: #e0f2fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.relief-campaign-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-title);
+  margin: 0;
+}
+
+.relief-campaign-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-body);
+  margin-bottom: 20px;
+}
+
+.relief-campaign-progress-wrap {
+  margin-bottom: 12px;
+}
+
+.relief-campaign-progress-bar {
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.relief-campaign-progress-fill {
+  height: 100%;
+  background-color: var(--primary);
+  border-radius: var(--radius-pill);
+  transition: width 0.4s ease;
+}
+
+.relief-campaign-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  color: var(--text-title);
+  margin-bottom: 22px;
+}
+
+.relief-campaign-raised-text strong {
+  font-weight: 700;
+  color: var(--text-title);
+}
+
+.relief-campaign-pct {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.relief-campaign-action {
+  display: flex;
+}
+
+.relief-campaign-donate-btn {
+  padding: 10px 24px;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .relief-campaign-card {
+    padding: 20px !important;
+  }
+}
