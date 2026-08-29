@@ -1,73 +1,67 @@
 import mongoose from 'mongoose';
 
-const missionSchema = new mongoose.Schema(
+const shelterSchema = new mongoose.Schema(
   {
-    title: {
+    name: {
       type: String,
-      required: [true, 'Mission title is required'],
+      required: [true, 'Shelter name is required'],
       trim: true,
     },
     location: {
       type: String,
-      required: [true, 'Location is required'],
+      required: [true, 'Shelter location is required'],
       trim: true,
     },
-    requiredVolunteers: {
+    currentCapacity: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
+    maxCapacity: {
       type: Number,
       required: true,
       min: 1,
     },
-    joinedVolunteers: {
+    availableSpaces: {
       type: Number,
-      default: 0,
-      min: 0,
-    },
-    missionType: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    urgency: {
-      type: String,
-      enum: ['Low', 'Medium', 'High', 'Critical'],
-      default: 'High',
-    },
-    date: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    description: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    contactPerson: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    contactPhone: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-    volunteersList: [
-      {
-        name: String,
-        email: String,
-        phone: String,
-        joinedAt: {
-          type: Date,
-          default: Date.now,
-        },
+      default: function () {
+        return Math.max(0, this.maxCapacity - this.currentCapacity);
       },
-    ],
+    },
+    availableFood: {
+      type: String,
+      default: 'Available',
+    },
+    medicalSupport: {
+      type: String,
+      default: 'Basic First Aid Available',
+    },
+    contact: {
+      type: String,
+      required: true,
+    },
+    status: {
+      type: String,
+      enum: ['Open', 'Available', 'Near Full', 'Full', 'Closed'],
+      default: 'Open',
+    },
+    facilities: {
+      type: [String],
+      default: [],
+    },
   },
   {
     timestamps: true,
   }
 );
 
-const Mission = mongoose.model('Mission', missionSchema);
-export default Mission;
+// Pre-save calculation of availableSpaces
+shelterSchema.pre('save', function (next) {
+  const max = Number(this.maxCapacity) || 0;
+  const curr = Number(this.currentCapacity) || 0;
+  this.availableSpaces = Math.max(0, max - curr);
+  next();
+});
+
+const Shelter = mongoose.model('Shelter', shelterSchema);
+export default Shelter;
