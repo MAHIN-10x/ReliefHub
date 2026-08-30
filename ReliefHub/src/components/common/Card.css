@@ -7,7 +7,6 @@
   overflow: hidden;
 }
 
-/* Padding variants */
 .relief-card--pad-none { padding: 0; }
 .relief-card--pad-sm { padding: 14px 18px; }
 .relief-card--pad-normal { padding: 22px 24px; }
