@@ -10,7 +10,6 @@
   width: fit-content;
 }
 
-/* Sizes */
 .relief-badge--sm {
   padding: 4px 10px;
   font-size: 0.7rem;
@@ -26,7 +25,6 @@
   font-size: 0.85rem;
 }
 
-/* Live pill style (as seen in screenshots on teal backgrounds) */
 .relief-badge--live {
   background-color: rgba(255, 255, 255, 0.12);
   color: #ffffff;
@@ -50,28 +48,24 @@
   border: 1px solid #fecaca;
 }
 
-/* Success */
 .relief-badge--success {
   background-color: #dcfce7;
   color: #15803d;
   border: 1px solid #bbf7d0;
 }
 
-/* Info */
 .relief-badge--info {
   background-color: #e0f2fe;
   color: #0369a1;
   border: 1px solid #bae6fd;
 }
 
-/* Warning */
 .relief-badge--warning {
   background-color: #fef3c7;
   color: #b45309;
   border: 1px solid #fde68a;
 }
 
-/* Neutral */
 .relief-badge--neutral {
   background-color: #f1f5f9;
   color: #475569;

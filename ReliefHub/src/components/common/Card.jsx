@@ -1,10 +1,6 @@
 import React from 'react';
 import './Card.css';
 
-/**
- * Reusable Card component for ReliefHub
- * Supports 'default', 'elevated', 'interactive', and 'emergency' variants
- */
 const Card = ({
   children,
   variant = 'default',

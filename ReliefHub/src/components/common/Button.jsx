@@ -1,11 +1,6 @@
 import React from 'react';
 import './Button.css';
 
-/**
- * Reusable Button Component for ReliefHub
- * Supports variants: 'primary', 'danger', 'white', 'secondary', 'outline'
- * Supports sizes: 'sm', 'md', 'lg'
- */
 const Button = ({
   children,
   variant = 'primary',

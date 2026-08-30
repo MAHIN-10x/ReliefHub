@@ -13,13 +13,11 @@
 .relief-card--pad-normal { padding: 22px 24px; }
 .relief-card--pad-lg { padding: 32px; }
 
-/* Elevated */
 .relief-card--elevated {
   box-shadow: var(--shadow-card);
   border-color: rgba(229, 231, 235, 0.8);
 }
 
-/* Clickable / Interactive */
 .relief-card--clickable,
 .relief-card--interactive {
   cursor: pointer;
@@ -32,7 +30,6 @@
   border-color: #cbd5e1;
 }
 
-/* Emergency variant (subtle red alert card) */
 .relief-card--emergency {
   background-color: var(--danger-subtle);
   border-color: var(--danger-border);

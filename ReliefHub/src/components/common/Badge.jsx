@@ -1,10 +1,7 @@
 import React from 'react';
 import './Badge.css';
 
-/**
- * Reusable Badge / Pill component
- * Supports 'live', 'urgent', 'success', 'warning', 'info', 'neutral'
- */
+
 const Badge = ({
   children,
   variant = 'neutral',

@@ -239,7 +239,6 @@
   justify-content: flex-start;
 }
 
-/* Responsive Breakpoints */
 @media (max-width: 880px) {
   .relief-nav-links,
   .relief-auth-links {
