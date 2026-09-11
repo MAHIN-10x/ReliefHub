@@ -9,19 +9,19 @@ import './Home.css';
 const Home = () => {
   return (
     <div className="relief-home-page">
-      {/* 1. Hero Banner */}
+      {}
       <Hero />
 
-      {/* 2. Statistics Overview */}
+      {}
       <Statistics />
 
-      {/* 3. How ReliefHub Helps Section */}
+      {}
       <HowItHelps />
 
-      {/* 4. Urgent Assistance Callout Banner */}
+      {}
       <EmergencyBanner />
 
-      {/* 5. Active Relief Campaign Card */}
+      {}
       <CampaignCard />
     </div>
   );

@@ -2,9 +2,6 @@ import React, { useEffect } from 'react';
 import { X } from 'lucide-react';
 import './Modal.css';
 
-/**
- * Reusable Modal component with escape key and backdrop dismiss
- */
 const Modal = ({ isOpen, onClose, title, children, maxWidth = '540px' }) => {
   useEffect(() => {
     const handleKeyDown = (e) => {

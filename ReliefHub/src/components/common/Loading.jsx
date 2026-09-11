@@ -1,9 +1,6 @@
 import React from 'react';
 import './Loading.css';
 
-/**
- * Reusable Loading Spinner component
- */
 const Loading = ({ message = 'Loading ReliefHub data...', fullScreen = false }) => {
   if (fullScreen) {
     return (

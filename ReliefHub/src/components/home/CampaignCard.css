@@ -109,7 +109,6 @@
   font-size: 0.95rem;
 }
 
-/* Responsive */
 @media (max-width: 520px) {
   .relief-campaign-card {
     padding: 20px !important;

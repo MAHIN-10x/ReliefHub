@@ -9,7 +9,7 @@ const Hero = () => {
 
   return (
     <section className="relief-hero">
-      {/* Subtle decorative concentric circle vector backgrounds matching screenshots */}
+      {}
       <div className="relief-hero-decorations" aria-hidden="true">
         <div className="relief-hero-circle relief-hero-circle--1" />
         <div className="relief-hero-circle relief-hero-circle--2" />

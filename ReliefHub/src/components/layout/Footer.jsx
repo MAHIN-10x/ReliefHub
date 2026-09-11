@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className="relief-footer">
       <div className="container relief-footer-inner">
-        {/* Brand & Mission Column */}
+        {}
         <div className="relief-footer-col relief-footer-brand-col">
           <Link to="/" className="relief-footer-brand">
             <div className="relief-footer-brand-icon">

@@ -1,0 +1,44 @@
+.relief-notfound-page {
+  padding: 80px 0 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+.relief-notfound-container {
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.relief-notfound-icon-wrap {
+  margin-bottom: 12px;
+}
+
+.relief-notfound-icon {
+  color: var(--danger);
+}
+
+.relief-notfound-code {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-title);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.relief-notfound-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text-title);
+  margin-bottom: 12px;
+}
+
+.relief-notfound-desc {
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
