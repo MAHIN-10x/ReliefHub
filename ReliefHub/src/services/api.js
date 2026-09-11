@@ -11,12 +11,6 @@ async function request(endpoint, options = {}) {
     ...(options.headers || {}),
   };
 
-  // Optional: Attach token if user is authenticated in the future
-  const token = localStorage.getItem('reliefhub_token');
-  if (token) {
-    headers['Authorization'] = `Bearer ${token}`;
-  }
-
   const config = {
     ...options,
     headers,
