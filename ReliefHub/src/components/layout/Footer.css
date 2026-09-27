@@ -155,7 +155,24 @@
 .relief-footer-bottom-links {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12px;
+}
+
+.relief-sustainability-report {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+}
+
+.relief-sustainability-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
 }
 
 .relief-footer-bottom-links a {
@@ -189,5 +206,9 @@
   .relief-footer-bottom-inner {
     flex-direction: column;
     text-align: center;
+  }
+
+  .relief-sustainability-report {
+    justify-content: center;
   }
 }
