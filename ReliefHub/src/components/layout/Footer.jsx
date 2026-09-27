@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PhoneCall, ShieldAlert, Heart, MapPin, Mail } from 'lucide-react';
+import SustainabilityReport from '../common/SustainabilityReport';
 import './Footer.css';
 
 const Footer = () => {
@@ -82,6 +83,8 @@ const Footer = () => {
         <div className="container relief-footer-bottom-inner">
           <p>© {new Date().getFullYear()} ReliefHub. Built for rapid emergency relief and community support.</p>
           <div className="relief-footer-bottom-links">
+            <SustainabilityReport />
+            <span>•</span>
             <Link to="/about">Privacy & Trust</Link>
             <span>•</span>
             <Link to="/about">Terms of Service</Link>
